@@ -6,11 +6,11 @@ var Queue = function() {
   	o: 0,
   	storage : {}
   };
-  _.extend(instance, Queue.queueMethods);
+  _.extend(instance, queueMethods);
   return instance;
 };
 
-Queue.queueMethods = {
+var queueMethods = {
 	Queue: function(){
 		return {
 			i: 0,
