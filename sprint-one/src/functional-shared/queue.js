@@ -11,7 +11,13 @@ var Queue = function() {
 };
 
 Queue.queueMethods = {
-
+	Queue: function(){
+		return {
+			i: 0,
+			o: 0,
+			storage: {}
+		};
+	},
 	enqueue: function(item){
 		this.storage[this.i] = item;
 		this.i++;

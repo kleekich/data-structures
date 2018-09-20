@@ -4,11 +4,11 @@ var Stack = function() {
   var someInstance = {
   	storage: {}
   };
-  _.extend(someInstance, Stack.stackMethods);
+  _.extend(someInstance, stackMethods);
   return someInstance;
 };
 
-Stack.stackMethods = {
+var stackMethods = {
 	push : function(value) {
 		 this.storage[this.size()] = value;
 		
